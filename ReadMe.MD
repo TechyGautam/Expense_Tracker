@@ -57,8 +57,8 @@ expense-tracker/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/expense-tracker.git
-cd expense-tracker
+git clone https://github.com/TechyGautam/Expense_Tracker.git
+cd Expense_Tracker
 ```
 
 ### Install Dependencies
