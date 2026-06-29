@@ -2,9 +2,9 @@
 
 A simple and interactive Expense Tracker built using Python, Streamlit, SQLite3, and Object-Oriented Programming (OOP). This application helps users manage their daily expenses, store data in a database, visualize spending patterns, and import expense records through CSV files.
 ## Screenshots
-<img scr="Expense_Tracker\ss\main.png">
-<img scr="Expense_Tracker\ss\analytic.png">
-<img scr="Expense_Tracker\ss\view.png">
+<img scr="ss\main.png",width="500">
+<img scr="ss\analytic.png">
+<img scr="ss\view.png">
 ## 🚀 Features
 
 * ➕ Add new expenses
