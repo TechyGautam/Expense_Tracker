@@ -2,7 +2,7 @@ import database
 import matplotlib.pyplot as plt
 import streamlit as st
 import pandas as pd
-st.title("Expense Tracker 📅")
+st.title(":blue[Expense] :red[Tracker] 📅",text_alignment="center")
 
 def add_expense():
 
@@ -48,9 +48,10 @@ if opt == "Add Expenses":
     "Education",
     "Health",
     "Other"
-]
+]   
+    st.logo("💾")
     st.title("Add Your Today Expenses")
-    amt = st.number_input("Enter the amount:")
+    amt = st.number_input("Enter the amount:",value=None,placeholder="XXX..")
     category = st.selectbox("Category", categories)
     date = st.text_input("Enter the date (YYYY-MM-DD): ")
     description = st.text_input("Enter a description (optional): ")
@@ -70,7 +71,7 @@ elif opt == "View Expenses":
     st.dataframe(expense)
 elif opt == "Delete Expenses":
     st.title("Delete Your Expenses here")
-    delete_id = st.number_input("Enter ID Number for Delete Expense")
+    delete_id = st.number_input("Enter ID Number for Delete Expense",value=None,placeholder="ID Number")
     db = database.DB()
     if st.button("Delete"):
         db.delete_data(delete_id)
